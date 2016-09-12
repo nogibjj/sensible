@@ -16,8 +16,8 @@ class Formatter(object):
 
     def console_formatter(self):
         """Console Formatter"""
-        format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        console_format = logging.Formatter(format)
+        fmt = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        console_format = logging.Formatter(fmt)
         return console_format
 
 def initialize_handlers():
