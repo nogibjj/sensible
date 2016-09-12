@@ -1,5 +1,5 @@
 test:
-	PYTHONPATH=.. pytest --tb=short
+	cd tests;PYTHONPATH=.. pytest --tb=short
 
 install:
 	pip install -r requirements.txt

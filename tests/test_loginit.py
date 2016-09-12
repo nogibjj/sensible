@@ -2,7 +2,7 @@ import unittest
 import os
 import logging
 
-from loginit import initialize_handlers, logger, create_env
+from sensible.loginit import initialize_handlers, logger, create_env
 
 class TestLogInitSet(unittest.TestCase):
 
