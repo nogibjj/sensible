@@ -9,3 +9,6 @@ lint:
 
 clean:
 	find . -name '*.pyc' -delete
+
+release:
+	python setup.py sdist bdist_wheel upload

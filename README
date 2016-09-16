@@ -9,6 +9,6 @@ import logger
 2009-08-04 23:56:22,583 - MyApp - INFO - stuff
 Environmental Variable
 
-If you want to print log.debug messages, you simply set the environmental variable:
+If you want to print log.debug messages, set the environmental variable:
 
 LOGGING_DEBUG = 1

@@ -22,7 +22,7 @@ You simply do this::
 
 Environmental Variable
 ---------------------
-If you want to print log.debug messages, you simply set
+If you want to print log.debug messages, set
 the environmental variable::
 
     export LOGGING_DEBUG = 1

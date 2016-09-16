@@ -1,28 +1,26 @@
-#!/usr/bin/env python
-"""
-Setup script.
-"""
+import re
+import ast
+from setuptools import setup
 
-from distutils.core import setup
 
-setup(name = "Sensible",
-    version = "0.2",
-    description = "A sensible logging default",
-    long_description = "A sensible logging default with env toggling",
-    author = "Noah Gift",
-    author_email = 'noah.gift@gmail.com',
-    url = "https://noahgift@bitbucket.org/noahgift/sensible/",
-    download_url = "https://bitbucket.org/noahgift/sensible/downloads/sensible-0.2.zip",
-    platforms = ['any'],
+_version_re = re.compile(r'__version__\s+=\s+(.*)')
 
-    license = "GPLv3+",
 
-    package_dir = {'sensible': 'src/sensible'},
-    packages = ['sensible'],
+with open('sensible/__init__.py', 'rb') as f:
+    version = str(ast.literal_eval(_version_re.search(
+        f.read().decode('utf-8')).group(1)))
 
-    classifiers = [
-        'License :: OSI Approved :: GNU General Public License (GPL)',
-        'Development Status :: 5 - Production/Stable',
-        'Topic :: Software Development :: Libraries :: Python Modules',
-        'Programming Language :: Python'],
+
+setup(
+    name='sensible',
+    author='Noah Gift',
+    author_email='noah.gift@gmail.com',
+    version=version,
+    url='http://github.com/noahgift/sensible',
+    packages=['sensible'],
+    description='A simple and sensible logging config',
+    classifiers=[
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python',
+    ],
 )
