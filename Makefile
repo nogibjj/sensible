@@ -12,3 +12,5 @@ clean:
 
 release:
 	python setup.py sdist bdist_wheel upload
+
+all: lint test

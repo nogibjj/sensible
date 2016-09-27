@@ -34,16 +34,12 @@ def initialize_handlers():
     handlers.append(console)
     return handlers
 
-_log = None
 def logger(name, handlers=initialize_handlers):
-    """Initializes Logging"""
+    """Initializes Logging, Disables propogation"""
 
-    global _log
-    if _log is not None:
-        return _log
-    else:
-        log = logging.getLogger(name)
-        log.setLevel(logging.DEBUG)
-        for handler in handlers():
-            log.addHandler(handler)
-        return log
+    log = logging.getLogger(name)
+    log.setLevel(logging.DEBUG)
+    for handler in handlers():
+        log.addHandler(handler)
+        log.propagate = False
+    return log
