@@ -1,5 +1,5 @@
 test:
-	cd tests;PYTHONPATH=.. pytest --tb=short
+	cd tests;PYTHONPATH=.. pytest --cov=sensible *.py
 
 install:
 	pip install -r requirements.txt
