@@ -1,5 +1,6 @@
 test:
-	cd tests;PYTHONPATH=.. pytest --cov=sensible *.py
+	which py.test
+	cd tests;PYTHONPATH=.. py.test --cov=sensible *.py
 
 install:
 	pip install -r requirements.txt
