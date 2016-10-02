@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/nogibjj/sensible.svg?branch=master)](https://travis-ci.org/nogibjj/sensible)
+
 #A "Sensible" Logging Configuration For Python.
 
 ##Example
