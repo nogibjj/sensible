@@ -19,3 +19,7 @@ If you want to print log.debug messages, set the environmental variable:
 ##Additional Features
 
 Eliminates duplicate logging message by stopping log propogation.
+
+###Advanced example (logging via commandline daemon using click framework)
+
+https://github.com/nogibjj/sensible/blob/master/examples/README.md
