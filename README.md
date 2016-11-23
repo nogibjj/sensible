@@ -20,7 +20,7 @@ If you want to print log.debug messages, set the environmental variable:
 
 Eliminates duplicate logging message by stopping log propogation.
 
-###Advanced example [!see examples](https://github.com/nogibjj/sensible/tree/master/examples) (logging via commandline daemon using click framework)
+###Advanced example [see examples directory](https://github.com/nogibjj/sensible/tree/master/examples) (logging via commandline daemon using click framework)
 
  ```bash
     pip install -r requirements.txt
