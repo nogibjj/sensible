@@ -16,7 +16,7 @@ setup(
     author='Noah Gift',
     author_email='noah.gift@gmail.com',
     version=version,
-    url='http://github.com/noahgift/sensible',
+    url='http://github.com/nogibjj/sensible',
     packages=['sensible'],
     description='A simple and sensible logging config',
     classifiers=[
