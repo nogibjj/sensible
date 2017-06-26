@@ -1,4 +1,4 @@
-###Example of a more advanced logging scenario
+### Example of a more advanced logging scenario
 
 To use the example:
 
