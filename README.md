@@ -1,8 +1,8 @@
 [![Build Status](https://travis-ci.org/nogibjj/sensible.svg?branch=master)](https://travis-ci.org/nogibjj/sensible)
 
-#A "Sensible" Logging Configuration For Python.
+# A "Sensible" Logging Configuration For Python.
 
-##Example
+## Example
 
     >>> from sensible.loginit
     import logger
@@ -10,17 +10,17 @@
     >>> log.info("stuff")
     2009-08-04 23:56:22,583 - MyApp - INFO - stuff
 
-##Easy to Toggle Debug Logging
+## Easy to Toggle Debug Logging
 
 If you want to print log.debug messages, set the environmental variable:
 
     LOGGING_DEBUG = 1
 
-##Additional Features
+## Additional Features
 
 Eliminates duplicate logging message by stopping log propogation.
 
-###Advanced example [see examples directory](https://github.com/nogibjj/sensible/tree/master/examples) (logging via commandline daemon using click framework)
+### Advanced example [see examples directory](https://github.com/nogibjj/sensible/tree/master/examples) (logging via commandline daemon using click framework)
 
  ```bash
     pip install -r requirements.txt
